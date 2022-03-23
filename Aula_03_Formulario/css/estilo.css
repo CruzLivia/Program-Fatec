@@ -1,0 +1,46 @@
+/* CSS do projeto */
+
+/*fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100&display=swap');
+
+body {
+    font-family: 'Smooch+Sans','arial';             /*Fonte selecionada, se não for utilizada então usa arial*/
+}
+                    /*Para espaços em formularios*/
+label{
+    font-size: 12pt;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.botão{
+    padding-top: 8px;
+    padding-bottom: 8px; 
+    color: white; /*botão color*/
+    background-color: black; /*borda*/
+    border: none;
+    cursor: pointer;/*cursor */
+    margin-top: 16px;
+
+}
+
+.botão:hover{/*quando pressionado - hover=pressionado*/
+    opacity: 0.3;
+    color: blue;
+}
+.limpar{
+    background-color: coral;
+}
+fieldset{
+    color: blueviolet;
+    width: 50%;
+    border-color: blue;
+    background-color: rgb(255, 209, 209);
+}
+input[type=text], input[type=password]{
+    width: 100%;
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid rgb(17, 132, 199);
+    box-sizing: border-box ;
+}

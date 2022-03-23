@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+   <h1>Novo Curriculo</h1> 
+   <form method="get" name="formcurriculo">
+       <fieldset><!-- caixinha -->
+           <legend>dados pessoais </legend>
+            <label >nome:</label>
+                <input type="text" name="nome" required/><br>
+            <label> endereço: </label>
+                <input type="text" name="endereço" required size="50"/> <br>
+            <label> Cidade: </label>
+                <input type="text" name=" Cidade" required size="30">
+            <label> Estado : </label>
+                <select name="estado" required> 
+                    <option value="SP">São paulo</option>
+                    <option value="MG">Minas gerais</option>
+                    <Option value="RJ"> Rio de Janeiro</Option>
+                    <Option value="ES"> Espirito Santo</Option>
+                    <Option value="" selected> Selecione...</Option>
+                </select> <br>
+                <label>RG: </label>
+                <input type="text " name="RG " required size="15"/>
+                <label>CPF: </label>
+                <input type="text " name="CPF" required size="14" maxlength="14 " pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}"
+                placeholder="Ex : 123.456.789-10"
+                title="Informe o CPF no formato 999.999.999-99"/>
+                <label> sexo </label>
+                <input type="radio" name="sexo" value="M">masculino
+                <input type="radio" name="sexo" value="F" checked> feminino <br>
+                <label> nascimento:</label>
+            <input type="date" name="nascimento" required max="2022-03-22"/>
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Experiencia profissional</legend>
+                <input type="checkbox" name="primeiro" 
+                value="sim">primeiro emprego? <br>
+                <label > pretenção salarial:</label>
+                <input type="number" name="Salario" 
+                min="0" required />
+                <label></label> curriculo ( anexe doc ou pdf)</label>
+                <input type="file" name="curriculo" accept=".pdf,.doc,.docx"/><br>
+                <label> Correio eletronico</label>
+                <input type="email" name="correio" required>
+            </fieldset>
+       <input type="submit" value="enviar">
+   </form>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulario+</title>
+    <!-- carregando o CSS-->
+    <link href="css/estilo.css" rel="stylesheet"/>
+
+</head>
+<body>
+  <p>Paragrafo de teste </p> 
+  <form name="formlogin"  method="post" action="/" >
+        <fieldset>
+                <legend> área reservada </legend>
+                <label>login:</label>
+                <input type="text" id="login" name="login" size="30" placeholder="email ou CPF" 
+title="INFORME O SEU USUARIO PARA LOGIN  " required />
+
+                <label> senha: </label>
+                <input type="password" id=" senha" name="senha" size="20" placeholder="senha" required  
+                title=" informe sua senha "/> 
+                <input type="checkbox" name="lembrar" id="lembrar"/>
+                lembrar o usuario?''
+        </fieldset>
+         <input type="Submit"  value="login" class ="botão" />   <!-- botão -->
+         <input type="reset" value="limpar"  class = "botão limpar" />
+
+  </form>
+  <p>ainda não tem um usuario? <a href="#"> -cadastre-se </a></p>
+</body>
+</html>

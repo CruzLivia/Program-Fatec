@@ -1,0 +1,26 @@
+/* Projeto css */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
+body{ 
+    background-color: #CCCCCC;
+    font-family: 'Rajdhani','Arial';
+}
+th{ background-color: #b3f51a;/* Cor de fundo */
+color: #301af5;/* cor da fonte */
+padding: 8px;/* Margem interna */
+
+}
+td{
+    padding: 4px;
+}
+table{
+    width: 50%;/*largura*/
+}
+.direita{
+    text-align: right;
+}
+img{
+    width: 500px;
+    border-radius: 100px;
+}

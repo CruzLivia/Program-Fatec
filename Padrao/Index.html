@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name = "cadastro" method = "get">
+<label> CEP :</label>
+<input type="text" name="cep"
+pattern="[0-9]{5}[-][0-9]{3}"
+title="informe um cep valido" /> <br>
+<label>CPF:</label>
+<input type="text" name="cpf"
+pattern="[0-9]{3}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}" 
+        maxlength="14"
+title="informe um cpf valido" /> <br>
+<input type="submit" value="salvar" />
+
+
+    </form>
+</body>
+</html>
